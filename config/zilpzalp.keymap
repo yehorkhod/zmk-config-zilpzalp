@@ -1,3 +1,8 @@
+#ifdef ZILPZALP_BLE_FLAG
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+#endif
+
 #include "base_zilpzalp.h"
 
 
@@ -54,6 +59,18 @@
                                                              &kp TILDE        &trans         &trans         &trans
             >;
         };
+#ifdef ZILPZALP_BLE_FLAG
+        function {
+            label = "FUN";
+
+            bindings = <
+                               &bootloader    &trans         &bt BT_CLR_ALL &bt BT_PRV     &kp F12        &kp F7         &kp F8         &kp F9
+                &bootloader    &kp F12        &kp F11        &kp F10        &bt BT_NXT     &kp F11        &kp F4         &kp F5         &kp F6         &kp F10
+                               &kp F9         &kp F8         &kp F7                                       &kp F1         &kp F2         &kp F3
+                                                             &out OUT_TOG   &trans         &trans         &trans
+            >;
+#endif
+#ifndef ZILPZALP_BLE_FLAG
         function {
             label = "FUN";
 
@@ -63,6 +80,7 @@
                                &kp F9         &kp F8         &kp F7                                       &kp F1         &kp F2         &kp F3
                                                              &trans         &trans         &trans         &trans
             >;
+#endif
         };
 
     };
