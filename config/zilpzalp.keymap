@@ -22,7 +22,7 @@
                       &kp W &kp L      &kp D       &kp G          &kp J       &kp F      &kp O      &kp U
                 &kp N &kp S &ht LALT R &ht LGUI T  &ht LCTRL K    &ht RCTRL Y &ht RGUI H &ht RALT E &kp I   &kp A
                       &kp X &kp C      &kp V                                  &kp M      &comsem    &dotcol
-                                     &kp SHIFT &my_lt L1 SPACE    &my_lt L2 ENTER &kp BKSP
+                                     &kp LSHFT &my_lt L1 SPACE    &my_lt L2 ENTER &kp BKSP
             >;
         };
         layer1 {
